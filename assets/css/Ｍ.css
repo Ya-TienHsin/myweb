@@ -1,0 +1,559 @@
+*{
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
+}
+body,html{
+	height: 100%;
+	position: relative;
+
+}
+
+.wrapper{
+	overflow: hidden;
+}
+
+.bgc{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: #ff6c54; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #ff6c54, #ff453f); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #ff6c54, #ff453f); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #ff6c54, #ff453f); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom left, #ff6c54, #ff453f);/* Standard syntax */
+}
+
+
+.leaves img{
+	width: 100%;
+	height: auto;
+}
+
+.slogan{
+	height: 500px;
+	width: auto;
+}
+.slogan1 img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	width: 90%;
+	height: auto;
+	min-width: 300px;
+}
+
+.dog img{
+	position: absolute;
+	left: 15%;
+	top:14%;
+	z-index: 2;
+	width: 10%;
+	height: auto;
+	min-width: 40px;
+}
+
+.time img{
+	position: absolute;
+	z-index: 3;
+	width: 20%;
+	height: auto;
+	min-width: 80px;
+	left:10%;
+	top:33%;
+}
+
+.lantern img{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: auto;
+}
+
+.theme123{
+	border-bottom:dashed 3px white;
+}
+
+.open{
+
+	height: 80px;
+}
+
+.open img{
+	position: absolute;
+	width: 40%;
+	height: auto;
+	margin-top:-30px;
+	margin-left:50%;
+	transform: translateX(-50%);
+	min-width: 250px;
+
+
+}
+.part2{
+	height:350px;
+	width: auto;
+	margin-bottom: 10px;
+/*	background-color: rgba(216,0,0,0.8);*/
+background: linear-gradient(to bottom, rgba(216,0,0,0), rgba(216,0,0,1));
+}
+
+.theme1{
+	height: 200px;
+
+	background-color: #fabd1e;
+	background: #fabd1e; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #f1e1a2, #faca4b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #f1e1a2, #faca4b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #f1e1a2, #faca4b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #f1e1a2, #faca4b);/* Standard syntax */
+
+	margin-top:20px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+.theme1 .red{
+	font-size: 5vh;
+	font-weight: 700;
+	color: #f70f0f;
+}
+.theme1 img{
+	width: 70%;
+	height: auto;
+	margin-top:-200px;
+	margin-left: 140px;
+}
+
+.left p{
+	font-size: 3vh;
+	color: #40210f;
+	font-weight: 600;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+span{
+	font-size: 2vh;
+	font-weight: 800;
+	color: #40210f;
+	padding-left: 25px;
+}
+
+
+.theme2 img{
+	width: 60%;
+	margin-top:-140px;
+	margin-left: 160px;
+}
+
+.theme3 img{
+	width: 60%;
+	margin-top:-150px;
+	margin-left: 150px;
+}
+
+.words, .words span{
+	padding: 10px 0px;
+	font-size: 2vh;
+	line-height: 3vh;
+	color: #eee;
+}
+
+.part3{
+	height: auto;
+	width: auto;
+	margin: 15px 0px;
+}
+.part3 img{
+	width: 100%;
+	height: auto;
+}
+
+@media(max-width: 1440px){
+	.theme1 img{
+		margin-top:-180px;
+	}
+
+	.theme2 img{
+		margin-top:-160px;
+	}
+
+	.theme3 img{
+	margin-top:-180px;
+	margin-left: 150px;
+	}
+}
+
+@media(max-width:1200px){
+	.part2{
+		margin-top:-115px;
+	}
+	.open img{
+		margin-top:-10px;
+	}
+
+	.theme1 img{
+		width: 60%;
+		height: auto;
+		margin-top:-120px;
+		margin-left: 140px;
+	}
+	.theme2 img{
+		margin-top:-120px;
+	}
+	.theme3 img{
+		margin-left: 120px;
+		margin-top:-140px;
+
+	}
+
+@media(max-width:1024px){
+	.part2{
+		margin-top:-100px;
+	}
+
+}
+
+@media(max-width:991px){
+	.part2{
+		margin-top:-200px;
+		height: 820px;
+	}
+	.theme{
+		margin-top:320px;
+	}
+
+	.open{
+		height: 90px;
+	}
+	.open img{
+		width: 50%;
+		margin-top:-12px;
+	}
+
+	.theme1{
+		margin-top:40px;
+	}
+
+	.theme2,.theme3{
+		margin-top:-20px;
+	}
+
+	.theme1 img{
+		width: 50%;
+		margin-top:-225px;
+		margin-left: 300px;
+	}
+	.theme2 img{
+		width: 45%;
+		margin-top:-210px;
+		margin-left: 320px;
+	}
+	.left p, .left span{
+		padding-left: 50px;
+	}
+}
+@media(max-width:768px){
+	.part2{
+		margin-top:-150px;
+		height: 795px;
+	}
+	.open{
+		height: 60px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-60px;
+	}
+	.theme1{
+		margin-top:40px;
+	}
+	.theme2,.theme3{
+		margin-top:-25px;
+	}
+	.theme1 img{
+		width: 45%;
+		margin-top:-200px;
+		margin-left: 260px;
+	}
+	.theme2 img,.theme3 img{
+		margin-top:-220px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+}
+@media(max-width:690px)(min-width: 669px){
+	.part2{
+		margin-top:-200px;
+		height: 760px;
+	}
+	.open{
+		height: 30px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-60px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:40px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+
+	.theme1 img{
+		width: 60%;
+		margin-top:-210px;
+		margin-left: 230px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+}
+@media(max-width:668px){
+	.part2{
+		margin-top:-200px;
+		height: 760px;
+	}
+	.open{
+		height: 40px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-50px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:40px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+
+	.theme1 img{
+		width: 50%;
+		margin-top:-190px;
+		margin-left: 250px;
+	}
+	.theme2 img{
+		margin-top:-210px;
+
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+}
+@media(max-width:600px){
+	.part2{
+		margin-top:-200px;
+		height: 760px;
+	}
+	.open{
+		height:20px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-80px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:40px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+	.theme1 img{
+		width: 50%;
+		margin-top:-180px;
+		margin-left: 250px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+	.theme2 img{
+		margin-top: -200px;
+	}
+}
+@media(max-width:550px){
+	.part2{
+		margin-top:-200px;
+		height: 760px;
+	}
+	.open{
+		height: 5px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-100px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:40px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+	.theme1 img{
+		width: 60%;
+		margin-top:-180px;
+		margin-left: 200px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+	.theme2 img{
+		margin-top: -200px;
+	}
+}
+@media(max-width:500px){
+	.part2{
+		margin-top:-260px;
+		height: 760px;
+	}
+	.open{
+		height: 40px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-50px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:20px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+
+	.theme1 img{
+		width: 60%;
+		margin-top:-190px;
+		margin-left: 190px;
+	}
+	.theme3 img{
+		margin-top:-180px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+}
+@media(max-width:426px){
+	.part2{
+		margin-top:-300px;
+		height: 760px;
+	}
+	.open{
+		height: 60px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-30px;
+	}
+	.theme1{
+		margin-bottom: 10px;
+		margin-top:30px;
+	}
+	.theme2,.theme3{
+		margin-top:10px;
+	}
+	.theme1 img{
+		width: 50%;
+		margin-top:-150px;
+		margin-left: 195px;
+	}
+	.theme3 img{
+		margin-top:-140px;
+	}
+	.left p,.left span{
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+
+}
+
+@media(max-width:376px){
+	.open{
+		height: 50px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-25px;
+		left:-3px;
+	}
+	.theme1{
+		margin-bottom: 5px;
+		margin-top:25px;
+	}
+	.left p,.left span{
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.part2{
+		margin-top:-320px;
+		height: 760px;
+	}
+	.theme1 img{
+		margin-top:-130px;
+		margin-left: 145px;
+		width:60%;
+	}
+	
+	.theme2 img{
+		margin-top:-130px;
+		margin-left: 150px;
+		width:60%;
+	}
+	.theme3 img{
+		margin-top:-140px;
+		margin-left: 140px;
+		width:55%;
+	}
+}
+@media(max-width:320px){
+	.open{
+		height: 35px;
+	}
+	.open img{
+		width: 60%;
+		margin-top:-40px;
+		left:-3px;
+	}
+	.theme1{
+		margin-bottom: 5px;
+		margin-top:25px;
+	}
+	.left p,.left span{
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.part2{
+		margin-top:-320px;
+		height: 760px;
+	}
+	.theme1 img{
+		margin-top:-110px;
+		margin-left: 150px;
+		width:47%;
+	}
+	
+	.theme2 img{
+		margin-top:-170px;
+		width:45%;
+	}
+	.theme3 img{
+		margin-top:-140px;
+		margin-left: 140px;
+		width:50%;
+	}
+}

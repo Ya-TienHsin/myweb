@@ -1,0 +1,168 @@
+*{
+	font-family: 微軟正黑體;
+	position: relative;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.wrapper{
+	overflow: hidden;
+}
+
+.bgc{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: #d579d8; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #eb6363 , #d579d8); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #eb6363 , #d579d8); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #eb6363 , #d579d8); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom #eb6363 , #d579d8); /* Standard syntax */
+}
+.main-vision .image{
+	top:-13vh;
+	height: 140vh;
+	overflow: hidden;
+	min-height:100vh;
+
+	left: -8vh;
+	animation: show 1s ease-in-out,repeat 6s 1s ease-in-out infinite;
+	animation-fill-mode:backwards;
+}
+
+.main-vision .image1{
+	animation: wind 6s 1s ease-in-out infinite;
+	animation-fill-mode:backwards;
+}
+
+@keyframes wind {
+	0%{
+		margin-top: 50px;
+	}
+	50%{
+		margin-top: 0px;
+	}
+	100%{
+		margin-top: 49px;
+	}
+}
+
+@keyframes show{
+	from{
+		margin-top: 100px;
+		opacity: 0;
+	}
+	to{
+		margin-top: 10px;
+		opacity: 1;
+	}
+
+}
+
+@keyframes repeat{
+	0%{
+		margin-top: 35px;
+	}
+	50%{
+		margin-top: 2px;
+	}
+	100%{
+		margin-top: 34px;
+	}
+}
+
+.main-vision-inner{
+	width: 100%;
+	padding-top:88%;
+	height: 0;
+	position: relative;
+}
+
+
+.image,.image1,.image2{
+	/* 稱滿上層寬高 */
+	width: 100%;
+	height: 100%;
+	/* 將圖片絕對定位 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* 圖片的背景設定 */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.image2{
+	top:100px;
+	width: 10%;
+	height: 10%;
+	z-index: 2;
+}
+.introduce{
+/*	border: solid 1px white;*/
+	margin-left: 5.5vh;
+}
+
+.headpic{
+	height: 35vh;
+	overflow: hidden;
+
+	padding-left: 12vh;
+	padding-top: 1vh;
+}
+
+.headpic-inner{
+	width: 90%;
+	padding-top:108%;
+	height: 0;
+	position: relative;
+
+}
+
+
+.words{
+	position:absolute;
+	width: 40vh;
+	height: 50vh;
+/*	border: solid 1px white;*/
+	margin-top: -1vh;
+	margin-left: 6.1vh;
+	text-align: center;
+	color: #153489;
+}
+.words p{
+	text-align: left;
+	font-size: 16px;
+}
+
+.project{
+	height: 50px;
+	border-bottom: solid 1px #153489;
+
+	margin-bottom:10px;
+}
+.project p{
+	font-size:4vh;
+	text-align: center;
+	letter-spacing: 30px;
+	margin-bottom: 10px;
+	color: #153489;
+}
+span{
+	font-size:2vh;
+	letter-spacing: 7px;
+	color: #e5cb27;
+}
+
+.project1{
+	height: 200px;
+	border: solid 1px black;
+	margin-bottom:10px;
+}
